@@ -1,0 +1,136 @@
+/* Import unusual fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Righteous&display=swap');
+
+/* General styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    color: #e2e2e2;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px 0;
+    border-bottom: 2px solid #e94560;
+}
+
+h1 {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    color: #e94560;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color: #0f3460;
+    margin-bottom: 20px;
+    text-align: center;
+    background: #e94560;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Chart container */
+.chart-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Winners showcase */
+.winners-showcase {
+    background-color: rgba(15, 52, 96, 0.8);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+button#loadWinners {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px 24px;
+    background-color: #e94560;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button#loadWinners:hover {
+    background-color: #533483;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.winners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.winner-card {
+    background-color: rgba(233, 69, 96, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.winner-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.winner-card h3 {
+    font-family: 'Righteous', cursive;
+    color: #e94560;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.winner-card p {
+    margin-bottom: 8px;
+    color: #e2e2e2;
+}
+
+.winner-card .year {
+    font-weight: bold;
+    color: #ffbd69;
+}
+
+.winner-card .category {
+    font-style: italic;
+    color: #a7f3d0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #888;
+    font-size: 0.9rem;
+}

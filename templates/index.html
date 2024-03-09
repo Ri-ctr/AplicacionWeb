@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nobel Prize Winners Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Premios Nobel por País</h1>
+        </header>
+        
+        <main>
+            <section class="chart-container">
+                <canvas id="nobelChart"></canvas>
+            </section>
+            
+            <section class="winners-showcase">
+                <h2>Ganadores Destacados</h2>
+                <button id="loadWinners">Cargar 5 Ganadores Aleatorios</button>
+                <div id="winners-list" class="winners-grid">
+                    <!-- Winners will be loaded here via AJAX -->
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>Aplicación de Premios Nobel &copy; 2025</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
